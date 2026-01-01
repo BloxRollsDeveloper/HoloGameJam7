@@ -1,16 +1,15 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-    
 public class SceneManagement : MonoBehaviour
 {
-   
-   public void StartGame()
+    
+  public void StartGame()
     {
         SceneManager.LoadScene("ArchiveRoom");
     }
 
-    
- public void QuitGame()
+  
+    public void QuitGame()
     {
         Application.Quit();
     }
