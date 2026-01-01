@@ -9,8 +9,8 @@ public class SceneManagement : MonoBehaviour
     }
 
   
-    public void QuitGame()
+   public void ControlMenu()
     {
-        Application.Quit();
+        SceneManager.LoadScene("ControlMenu");
     }
 }
