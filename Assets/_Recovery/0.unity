@@ -670,6 +670,7 @@ MonoBehaviour:
   speakerTextPrefab: {fileID: 363406034}
   buttonPrefab: {fileID: 3386374070697796182, guid: 45d35094ed557a047a5f73bf55e0d102, type: 3}
   isStoryActive: 0
+  timesInteracted: 0
 --- !u!4 &586120217
 Transform:
   m_ObjectHideFlags: 0
