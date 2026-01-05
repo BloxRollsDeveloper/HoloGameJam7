@@ -55,27 +55,9 @@ public class DialogueSystem : MonoBehaviour
 				text = text.Trim();
 			
 				dialogueTextPrefab.text = text;
+				
+				UponChoicesBorn();
 			}
-			
-			// this part of the code is called infinitely, because it checks if story is null every frame
-			// TODO: figure out how to stop it from doing that
-			if (story.currentChoices.Count > 0)
-			{
-				choicesBox.SetActive(true);
-
-				for (int i = 0; i < story.currentChoices.Count; i++)
-				{
-					Choice choice = story.currentChoices[i];
-					Button button = CreateChoices(choice.text.Trim());
-					button.onClick.AddListener(delegate { OnClickChoiceButton(choice); });
-				}
-			}
-			else
-			{
-				Button choice = CreateChoices("End of story.\nRestart?");
-				choice.onClick.AddListener(delegate { StartStory(); });
-			}
-		
 		}
     }
 
@@ -93,19 +75,7 @@ public class DialogueSystem : MonoBehaviour
 	public void RefreshDialogue()
 	{
 		ClearDialogueBox();
-
-		// Display the text from the ink file
-		// if it can't continue, then surely, it means that there is a choice available.
-		/*while (story.canContinue)
-		{
-			isStoryActive = true;
-			print("Now, the story continues.");
-			string text = story.Continue();
-			text = text.Trim();
-			dialogueTextPrefab.text = text;
-		} */
-
-
+		
 		if (story.currentChoices.Count > 0)
 		{
 			choicesBox.SetActive(true);
@@ -117,31 +87,36 @@ public class DialogueSystem : MonoBehaviour
 				button.onClick.AddListener(delegate { OnClickChoiceButton(choice); });
 			}
 		}
-		else
+		/*else
 		{
 			Button choice = CreateChoices("End of story.\nRestart?");
 			choice.onClick.AddListener(delegate { StartStory(); });
-		}
+		}*/
 	}
 
 	private void UponChoicesBorn()
 	{
-		if (story.currentChoices.Count > 0)
+		// this part of the code is called infinitely, because it checks if story is null every frame
+		// TODO: figure out how to stop it from doing that
+		if (!story.canContinue)
 		{
-			choicesBox.SetActive(true);
-
-			for (int i = 0; i < story.currentChoices.Count; i++)
+			if (story.currentChoices.Count > 0)
 			{
-				Choice choice = story.currentChoices[i];
-				Button button = CreateChoices(choice.text.Trim());
-				button.onClick.AddListener(delegate { OnClickChoiceButton(choice); });
+				choicesBox.SetActive(true);
+
+				for (int i = 0; i < story.currentChoices.Count; i++)
+				{
+					Choice choice = story.currentChoices[i];
+					Button button = CreateChoices(choice.text.Trim());
+					button.onClick.AddListener(delegate { OnClickChoiceButton(choice); });
+				}
 			}
 		}
 		else
 		{
-			Button choice = CreateChoices("End of story.\nRestart?");
-			choice.onClick.AddListener(delegate { StartStory(); });
+			print("Whoops, no choices here!");
 		}
+		
 	}
 
 	private void ClearDialogueBox()
