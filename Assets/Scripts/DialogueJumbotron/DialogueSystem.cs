@@ -1,6 +1,7 @@
 using Ink.Runtime;
 using System;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,7 +22,10 @@ public class DialogueSystem : MonoBehaviour
 	[SerializeField] private TextMeshProUGUI speakerTextPrefab = null;
 	[SerializeField] private Button buttonPrefab = null;
 
-	public bool isStoryActive = false;
+	
+	// Assuming that the player will be speaking with one talent at a time, this one will be set to false,
+	// until they are spoken to.
+	public bool hasTalkedWith = false;
 
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	void Awake()
@@ -32,9 +36,46 @@ public class DialogueSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if (_inputSystem.Interact && !isStoryActive)
+		if (_inputSystem.Interact && !hasTalkedWith)
 		{
+			// TODO: find a way to make the dialogue only continue when the player presses 'E'.
 			StartStory();
+		}
+		
+		if (story != null) 
+		{
+			if (_inputSystem.Interact && story.canContinue && hasTalkedWith)
+			{
+				ClearDialogueBox();
+			
+				print("Now, the story continues.");
+			
+				string text = story.Continue();
+			
+				text = text.Trim();
+			
+				dialogueTextPrefab.text = text;
+			}
+			
+			// this part of the code is called infinitely, because it checks if story is null every frame
+			// TODO: figure out how to stop it from doing that
+			if (story.currentChoices.Count > 0)
+			{
+				choicesBox.SetActive(true);
+
+				for (int i = 0; i < story.currentChoices.Count; i++)
+				{
+					Choice choice = story.currentChoices[i];
+					Button button = CreateChoices(choice.text.Trim());
+					button.onClick.AddListener(delegate { OnClickChoiceButton(choice); });
+				}
+			}
+			else
+			{
+				Button choice = CreateChoices("End of story.\nRestart?");
+				choice.onClick.AddListener(delegate { StartStory(); });
+			}
+		
 		}
     }
 
@@ -42,7 +83,11 @@ public class DialogueSystem : MonoBehaviour
 	{
 		story = new Story(inkJSONAsset.text);
 		if (OnCreateStory != null) OnCreateStory(story);
-		RefreshDialogue();
+		
+		hasTalkedWith = true;
+		
+		dialogueTextPrefab.text = "Press E to continue.";
+		// RefreshDialogue();
 	}
 
 	public void RefreshDialogue()
@@ -51,19 +96,36 @@ public class DialogueSystem : MonoBehaviour
 
 		// Display the text from the ink file
 		// if it can't continue, then surely, it means that there is a choice available.
-		while (story.canContinue)
+		/*while (story.canContinue)
 		{
-			if (_inputSystem.Interact && !isStoryActive)
+			isStoryActive = true;
+			print("Now, the story continues.");
+			string text = story.Continue();
+			text = text.Trim();
+			dialogueTextPrefab.text = text;
+		} */
+
+
+		if (story.currentChoices.Count > 0)
+		{
+			choicesBox.SetActive(true);
+
+			for (int i = 0; i < story.currentChoices.Count; i++)
 			{
-				isStoryActive = true;
-				print("Now, the story continues.");
-				string text = story.Continue();
-				text = text.Trim();
-				dialogueTextPrefab.text = text;
+				Choice choice = story.currentChoices[i];
+				Button button = CreateChoices(choice.text.Trim());
+				button.onClick.AddListener(delegate { OnClickChoiceButton(choice); });
 			}
 		}
+		else
+		{
+			Button choice = CreateChoices("End of story.\nRestart?");
+			choice.onClick.AddListener(delegate { StartStory(); });
+		}
+	}
 
-
+	private void UponChoicesBorn()
+	{
 		if (story.currentChoices.Count > 0)
 		{
 			choicesBox.SetActive(true);
