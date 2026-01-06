@@ -5,12 +5,12 @@ public class SceneManagement : MonoBehaviour
     
   public void StartGame()
     {
-        SceneManager.LoadScene("ArchiveRoom");
+        SceneManager.LoadScene("BootlegArchiveRoom");
     }
 
   
-   public void ControlMenu()
+   public void QuitGame()
     {
-        SceneManager.LoadScene("ControlMenu");
+        Application.Quit();
     }
 }
