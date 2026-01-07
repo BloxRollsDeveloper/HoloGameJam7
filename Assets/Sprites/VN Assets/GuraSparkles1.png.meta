@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: a3b9f75ab8980360d88415531785e00c
+guid: 1479f99c81d55b0aea2e010961c990e2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -396304646211038371
-    second: BGArchiveroomdone12_0
+      213: 7961246713616479890
+    second: GuraSparkles1_0
+  - first:
+      213: -6025499047780637968
+    second: GuraSparkles1_1
+  - first:
+      213: 9118849321937928054
+    second: GuraSparkles1_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +102,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BGArchiveroomdone12_0
+      name: GuraSparkles1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 73
+        y: 752
+        width: 91
+        height: 138
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5311c3260b008af0800000000000000
-      internalID: -396304646211038371
+      spriteID: 2963b5e94b70c7e60800000000000000
+      internalID: 7961246713616479890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GuraSparkles1_1
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 735
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f2a49e5a80216ca0800000000000000
+      internalID: -6025499047780637968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GuraSparkles1_2
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 662
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67ffb620529ac8e70800000000000000
+      internalID: 9118849321937928054
       vertices: []
       indices: 
       edges: []
@@ -135,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BGArchiveroomdone12_0: -396304646211038371
+      GuraSparkles1_0: 7961246713616479890
+      GuraSparkles1_1: -6025499047780637968
+      GuraSparkles1_2: 9118849321937928054
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

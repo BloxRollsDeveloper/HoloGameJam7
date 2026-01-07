@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 1479f99c81d55b0aea2e010961c990e2
+guid: 373d325ad96ba8088b366a262b2d221e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7961246713616479890
-    second: GuraSparkles1_0
-  - first:
-      213: -6025499047780637968
-    second: GuraSparkles1_1
-  - first:
-      213: 9118849321937928054
-    second: GuraSparkles1_2
+      213: -5764376462733620197
+    second: Shiori_Shaken_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GuraSparkles1_0
+      name: Shiori_Shaken_0
       rect:
         serializedVersion: 2
-        x: 73
-        y: 752
-        width: 91
-        height: 138
+        x: 28
+        y: 0
+        width: 568
+        height: 1129
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,52 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2963b5e94b70c7e60800000000000000
-      internalID: 7961246713616479890
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GuraSparkles1_1
-      rect:
-        serializedVersion: 2
-        x: 621
-        y: 735
-        width: 40
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0f2a49e5a80216ca0800000000000000
-      internalID: -6025499047780637968
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GuraSparkles1_2
-      rect:
-        serializedVersion: 2
-        x: 159
-        y: 662
-        width: 45
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 67ffb620529ac8e70800000000000000
-      internalID: 9118849321937928054
+      spriteID: b1cc32be522d000b0800000000000000
+      internalID: -5764376462733620197
       vertices: []
       indices: 
       edges: []
@@ -185,9 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      GuraSparkles1_0: 7961246713616479890
-      GuraSparkles1_1: -6025499047780637968
-      GuraSparkles1_2: 9118849321937928054
+      Shiori_Shaken_0: -5764376462733620197
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
