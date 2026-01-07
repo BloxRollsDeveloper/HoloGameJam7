@@ -244,7 +244,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -484.79077, y: -272.59964}
+  m_AnchoredPosition: {x: -484.79077, y: -272.5996}
   m_SizeDelta: {x: 952, y: 536}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &139177955
@@ -412,6 +412,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4929743032198263884, guid: 5c8a1e79628bfff43a8f6f7b24494ac1, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4929743032198263884, guid: 5c8a1e79628bfff43a8f6f7b24494ac1, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 9107174603579237528, guid: 5c8a1e79628bfff43a8f6f7b24494ac1, type: 3}
@@ -1117,6 +1121,7 @@ GameObject:
   - component: {fileID: 1518979254}
   - component: {fileID: 1518979255}
   - component: {fileID: 1518979256}
+  - component: {fileID: 1518979257}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1248,6 +1253,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f7c3aff2dc2cbd438b036d09587b3ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneManagement
+--- !u!114 &1518979257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518979252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6bdae93159c3d52cbec89455990f589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractableTrigger
+  isInteractable: 1
 --- !u!1 &1628017390
 GameObject:
   m_ObjectHideFlags: 0
@@ -1363,7 +1381,6 @@ GameObject:
   - component: {fileID: 1712763976}
   - component: {fileID: 1712763975}
   - component: {fileID: 1712763978}
-  - component: {fileID: 1712763980}
   - component: {fileID: 1712763979}
   m_Layer: 0
   m_Name: BookOne
@@ -1406,7 +1423,7 @@ BoxCollider2D:
   m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.9500154}
+  m_Offset: {x: 0, y: -1.2334172}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1416,7 +1433,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 2.9000309}
+  m_Size: {x: 1, y: 3.4668343}
   m_EdgeRadius: 0
 --- !u!212 &1712763976
 SpriteRenderer:
@@ -1528,42 +1545,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1712763974}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 878a341648a080a429b20df9dbc7d5a9, type: 3}
+  m_Script: {fileID: 11500000, guid: c6bdae93159c3d52cbec89455990f589, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EventTrigger
-  unityEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  BookOne: {fileID: 1712763974}
---- !u!114 &1712763980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1712763974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
-  m_Delegates:
-  - eventID: 11
-    callback:
-      m_PersistentCalls:
-        m_Calls: []
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  isInteractable: 1
 --- !u!1 &1970159184
 GameObject:
   m_ObjectHideFlags: 0
