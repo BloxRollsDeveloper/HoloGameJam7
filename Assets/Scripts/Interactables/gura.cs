@@ -1,55 +1,76 @@
 using Ink.Parsed;
-using TMPro;
 using UnityEngine;
+using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting;
 
 public class Gura : MonoBehaviour
 {
-    [Header("Input")]
-    [SerializeField] private TMP_InputField Answer;
-
-    [Header("Feedback")]
+    [Header("UI")]
+    [SerializeField] private TMP_InputField answerInput;
     [SerializeField] private TextMeshProUGUI feedbackText;
+    [SerializeField] private TextMeshProUGUI questionText;
 
-    [Header("Correct Answer")]
-    [SerializeField] private int correctNumber = 7;
+    [System.Serializable]
+    public class Question
+    {
+        public string question;
+        public int correctAnswer;
+    }
+
+    [Header("Questions (in order)")]
+    [SerializeField] private List<Question> questions = new List<Question>();
+
+    private int currentQuestionIndex = 0;
 
     private void Awake()
     {
-        if (Answer == null) Debug.LogError("Answer (TMP_InputField) is NOT assigned!", this);
-        if (feedbackText == null) Debug.LogError("feedbackText (TextMeshProUGUI) is NOT assigned!", this);
+        answerInput.onEndEdit.AddListener(CheckAnswer);
+        feedbackText.gameObject.SetActive(false);
 
-        // Hook event in code so it always fires correctly
-        if (Answer != null)
-            Answer.onEndEdit.AddListener(grabInputField);
-
-        // Make sure feedback starts hidden (optional)
-        if (feedbackText != null)
-            feedbackText.gameObject.SetActive(false);
+        ShowCurrentQuestion();
     }
 
-    public void grabInputField(string input)
+    private void ShowCurrentQuestion()
     {
-        Debug.Log($"OnEndEdit fired. Raw input: '{input}'", this);
 
-        if (feedbackText == null) return;
+        feedbackText.gameObject.SetActive(false);
 
-        if (string.IsNullOrWhiteSpace(input))
+        if (currentQuestionIndex >= questions.Count)
         {
-            // If you want, show a message instead of doing nothing
+
+            questionText.text = "All questions completed!";
+            answerInput.interactable = false;
+            return;
+        }
+
+        Question q = questions[currentQuestionIndex];
+        questionText.text = q.question;
+
+        answerInput.text = "";
+        answerInput.ActivateInputField();
+    }
+
+    private void CheckAnswer(string input)
+    {
+        if (string.IsNullOrWhiteSpace(input))
+            return;
+
+        if (!int.TryParse(input, out int playerAnswer))
+        {
             ShowFeedback("Type a number first.", Color.yellow);
             return;
         }
 
-        if (int.TryParse(input.Trim(), out int playerNumber))
+        if (playerAnswer == questions[currentQuestionIndex].correctAnswer)
         {
-            if (playerNumber == correctNumber)
-                ShowFeedback("Gura is Proud", Color.green);
-            else
-                ShowFeedback("Gura is dissapointed", Color.red);
+            ShowFeedback("Gura is proud", Color.green);
+            currentQuestionIndex++;
+            Invoke(nameof(ShowCurrentQuestion), 1f);
         }
         else
         {
-            ShowFeedback("Please enter a number.", Color.yellow);
+            ShowFeedback("Gura is dissapointed", Color.red);
         }
     }
 
