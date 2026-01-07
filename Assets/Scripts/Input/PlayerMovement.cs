@@ -22,12 +22,12 @@ private void UpdateAnimation()
         if (horizontalMovement > 0f)
         {
             _animator.SetBool("IsWalking", true);
-            transform.localScale = new Vector3(1f, 1f, 1f);
+            transform.localScale = new Vector3(-1f, 1f, 1f);
         }
         else if (horizontalMovement < 0f)
         {
             _animator.SetBool("IsWalking", true);
-            transform.localScale = new Vector3(-1f, 1f, 1f);
+            transform.localScale = new Vector3(1f, 1f, 1f);
         }
         else
         {
