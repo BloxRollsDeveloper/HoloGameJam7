@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public float moveSpeed = 5f;
 
-    float horizontalMovement;
+    public float horizontalMovement;
 
     private void Start()
     {
@@ -19,19 +19,15 @@ public class PlayerMovement : MonoBehaviour
 private void UpdateAnimation()
     {
         _animator = GetComponent<Animator>();
-        if (horizontalMovement > 0f)
+
+        if (horizontalMovement != 0f)
         {
-            _animator.SetBool("IsWalking", true);
-            transform.localScale = new Vector3(-1f, 1f, 1f);
-        }
-        else if (horizontalMovement < 0f)
-        {
-            _animator.SetBool("IsWalking", true);
-            transform.localScale = new Vector3(1f, 1f, 1f);
+            _animator.SetFloat("Horizontal", horizontalMovement);
+             _animator.Play("Walk Tree");
         }
         else
         {
-            _animator.SetBool("IsWalking", false);
+            _animator.Play("Idle Tree");
         }
     }
     private void Update()
