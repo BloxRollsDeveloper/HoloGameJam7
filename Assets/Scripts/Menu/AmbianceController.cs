@@ -1,22 +1,16 @@
-using System;
 using UnityEngine;
 
-public class AmbienceController : MonoBehaviour
+public class AmbianceController : MonoBehaviour
 {
-   public AudioClip ambientClip;
-   public AudioSource audioSource;
-   
-   public static AmbienceController instance;
-   private void Awake()
-   {
-      if (instance == null)
-      {
-         instance = this;
-         DontDestroyOnLoad(gameObject);
-      }
-      else
-      {
-         Destroy(gameObject);
-      }
-   }
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 }
