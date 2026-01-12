@@ -542,6 +542,81 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &803655476
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 803655478}
+  - component: {fileID: 803655477}
+  m_Layer: 0
+  m_Name: FaunaTrivia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &803655477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803655476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca41f458cfd8bbe595f62775ccc651b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriviaSystem
+  currentRound: 0
+  strikes: 0
+  playerScore: 0
+  scoreToWinLevel: 0
+  lastPlayerAnswer: 
+  buzzGood: {fileID: 0}
+  buzzBad: {fileID: 0}
+  vfxleGood: {fileID: 0}
+  vfxBad: {fileID: 0}
+  triviaRounds:
+  - questionText: Who wrote the song that made Bethany's crash comedic?
+    textA: 
+    textB: 
+    textC: 
+    textD: Beethoven
+    correctAnswer: D
+    questionVAudio: {fileID: 0}
+  - questionText: What was the theme of her 4th outfit?
+    textA: Goth
+    textB: 
+    textC: 
+    textD: 
+    correctAnswer: A
+    questionVAudio: {fileID: 0}
+  - questionText: What day did she leave us?
+    textA: 
+    textB: 
+    textC: 1/3/25
+    textD: 
+    correctAnswer: C
+    questionVAudio: {fileID: 0}
+--- !u!4 &803655478
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803655476}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 405.6127, y: 174.82986, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &953236982
 GameObject:
   m_ObjectHideFlags: 0
@@ -965,12 +1040,12 @@ GameObject:
   - component: {fileID: 1615730334}
   - component: {fileID: 1615730333}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: FaunaTriviaPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1615730332
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1212,3 +1287,4 @@ SceneRoots:
   - {fileID: 1531052722}
   - {fileID: 1769704523}
   - {fileID: 336082824}
+  - {fileID: 803655478}
