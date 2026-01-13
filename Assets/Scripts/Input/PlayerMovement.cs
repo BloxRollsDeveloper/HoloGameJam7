@@ -1,36 +1,98 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System;
 
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] SpriteRenderer spriteRenderer;
-    [SerializeField] private Animator _animator;
+    private SpriteRenderer _spriteRenderer;
+    private Animator _animator;
+    private Rigidbody2D _rigidbody2D;
+    private InputBehaviourSystem _input;
     
-    public Rigidbody2D rb;
     public float moveSpeed = 5f;
 
-   public float horizontalMovement;
+    public float horizontalMovement;
+
+    public enum States
+    {
+        RightIdle,
+        LeftIdle,
+        RightWalk,
+        LeftWalk
+    }
+    
+    public States state;
+    public bool isMoving;
 
     private void Start()
     {
         _animator = GetComponent<Animator>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+        _rigidbody2D = GetComponent<Rigidbody2D>();
+        _input = GetComponent<InputBehaviourSystem>();
+        
+        state = States.LeftIdle;
     }
-private void UpdateAnimation()
+
+    private void FixedUpdate()
     {
-        if (horizontalMovement > 0f)
+        if (_input != null)
         {
-            _animator.SetBool("isWalking", true);
+            _rigidbody2D.linearVelocityX = _input.Horizontal * moveSpeed;
         }
-    }
-    private void Update()
-    {
+        
         UpdateAnimation();
-        rb.linearVelocity = new Vector2(horizontalMovement * moveSpeed, rb.linearVelocity.y);
-    }
-    public void Move(InputAction.CallbackContext context)
-    {
-        horizontalMovement = context.ReadValue<Vector2>().x;
     }
     
+    private void UpdateAnimation()
+    {
+        if (Math.Abs(_rigidbody2D.linearVelocityX) > 0)
+        {
+            isMoving = true;
+        }
+        else
+        {
+            isMoving = false;
+        }
+        
+        if (_rigidbody2D.linearVelocityX > 0)
+        {
+            state = States.RightWalk;
+        }
+        else if (_rigidbody2D.linearVelocityX < 0)
+        {
+            state = States.LeftWalk;
+        }
+
+        if (isMoving)
+        {
+            switch (state)
+            {
+                case States.LeftWalk:
+                    _animator.Play("Walk Left");
+                    break;
+                case States.RightWalk:
+                    _animator.Play("Walk Right");
+                    break;
+            }
+        }
+        else
+        {
+            switch (state)
+            {
+                case States.LeftIdle:
+                    _animator.Play("Idle Left");
+                    break;
+                case States.RightIdle:
+                    _animator.Play("Idle Right");
+                    break;
+            }
+        }
+    }
+    
+    /*public void Move(InputAction.CallbackContext context)
+    {
+        horizontalMovement = context.ReadValue<Vector2>().x;
+    }*/
 }

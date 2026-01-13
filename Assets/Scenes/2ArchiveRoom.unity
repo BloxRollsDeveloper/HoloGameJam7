@@ -408,6 +408,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &632904487
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 980088083077817683, guid: b49ada1e02812c241a52b5a8b9295295, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 980088083077817683, guid: b49ada1e02812c241a52b5a8b9295295, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 980088083077817683, guid: b49ada1e02812c241a52b5a8b9295295, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 980088083077817683, guid: b49ada1e02812c241a52b5a8b9295295, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 980088083077817683, guid: b49ada1e02812c241a52b5a8b9295295, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 980088083077817683, guid: b49ada1e02812c241a52b5a8b9295295, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 980088083077817683, guid: b49ada1e02812c241a52b5a8b9295295, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 980088083077817683, guid: b49ada1e02812c241a52b5a8b9295295, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 980088083077817683, guid: b49ada1e02812c241a52b5a8b9295295, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 980088083077817683, guid: b49ada1e02812c241a52b5a8b9295295, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206207075281047734, guid: b49ada1e02812c241a52b5a8b9295295, type: 3}
+      propertyPath: m_Name
+      value: MarmineVerShoriPlayer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b49ada1e02812c241a52b5a8b9295295, type: 3}
 --- !u!1 &653266650
 GameObject:
   m_ObjectHideFlags: 0
@@ -1873,81 +1930,14 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1fee50a3858089f4a32565d505f6a4d, type: 3}
---- !u!1001 &9205992381098003704
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -675136411017930730, guid: fab7a0dcd40bc1a9a9b3529598ca49be, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6165153072651729675, guid: fab7a0dcd40bc1a9a9b3529598ca49be, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.17
-      objectReference: {fileID: 0}
-    - target: {fileID: 6165153072651729675, guid: fab7a0dcd40bc1a9a9b3529598ca49be, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 6165153072651729675, guid: fab7a0dcd40bc1a9a9b3529598ca49be, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6165153072651729675, guid: fab7a0dcd40bc1a9a9b3529598ca49be, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6165153072651729675, guid: fab7a0dcd40bc1a9a9b3529598ca49be, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6165153072651729675, guid: fab7a0dcd40bc1a9a9b3529598ca49be, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6165153072651729675, guid: fab7a0dcd40bc1a9a9b3529598ca49be, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6165153072651729675, guid: fab7a0dcd40bc1a9a9b3529598ca49be, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6165153072651729675, guid: fab7a0dcd40bc1a9a9b3529598ca49be, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6165153072651729675, guid: fab7a0dcd40bc1a9a9b3529598ca49be, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7252951960164048605, guid: fab7a0dcd40bc1a9a9b3529598ca49be, type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7429874122553479241, guid: fab7a0dcd40bc1a9a9b3529598ca49be, type: 3}
-      propertyPath: m_Name
-      value: ShioriPlayer
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: -363132992007130612, guid: fab7a0dcd40bc1a9a9b3529598ca49be, type: 3}
-    - {fileID: -675136411017930730, guid: fab7a0dcd40bc1a9a9b3529598ca49be, type: 3}
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: fab7a0dcd40bc1a9a9b3529598ca49be, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 727624946}
   - {fileID: 577931079}
+  - {fileID: 632904487}
   - {fileID: 1628017394}
-  - {fileID: 9205992381098003704}
   - {fileID: 653266654}
   - {fileID: 366462190}
   - {fileID: 1396708165}

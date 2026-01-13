@@ -649,7 +649,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6407298827255601282}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: VNHandler, Assembly-CSharp
         m_MethodName: NextVNScene
         m_Mode: 1
@@ -1400,18 +1400,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &6407298827255601282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7697941463023800518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ec7910f27f936d4c99aa0248adc4bd6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::VNHandler
 --- !u!1 &6969460406765656152
 GameObject:
   m_ObjectHideFlags: 0
@@ -1438,7 +1426,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 704931108518026189}
-  - component: {fileID: 6407298827255601282}
+  - component: {fileID: 7697941463023800519}
   - component: {fileID: 216677430}
   m_Layer: 0
   m_Name: VNEventsContainer
@@ -1447,6 +1435,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7697941463023800519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7697941463023800518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 515a9323ac935aa808ea73e76308a264, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VNHandler
+  leftSceneCharacter: {fileID: 201561842}
+  rightSceneCharacter: {fileID: 126241754}
+  currentSpeakerName: {fileID: 2094403065}
+  currentText: {fileID: 1629024123}
+  nextTriviaSceneName: 
+  eventsForThisLevel: []
 --- !u!4 &7878350320192794685
 Transform:
   m_ObjectHideFlags: 0

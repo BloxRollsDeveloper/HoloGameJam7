@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 7252951960164048605}
   - component: {fileID: 9164773363278750218}
   - component: {fileID: 4901161509529450951}
+  - component: {fileID: 4694953424148407593}
   - component: {fileID: 7744244145455909651}
   - component: {fileID: 1750844219187421829}
   - component: {fileID: -675136411017930730}
@@ -375,6 +376,20 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &4694953424148407593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7429874122553479241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88e0d6db1eeb1a04cac1778848c8b942, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InputBehaviourSystem
+  Horizontal: 0
+  Interact: 0
 --- !u!114 &7744244145455909651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -387,10 +402,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9773e9219a2f4547abbfe8a5f51dc19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  spriteRenderer: {fileID: 0}
-  _animator: {fileID: 0}
-  rb: {fileID: 7252951960164048605}
   moveSpeed: 5
+  horizontalMovement: 0
+  state: 0
+  isMoving: 0
 --- !u!95 &1750844219187421829
 Animator:
   serializedVersion: 7
