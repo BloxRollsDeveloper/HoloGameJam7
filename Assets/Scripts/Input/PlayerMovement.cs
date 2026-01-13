@@ -87,6 +87,12 @@ public class PlayerMovement : MonoBehaviour
                 case States.RightIdle:
                     _animator.Play("Idle Right");
                     break;
+                case States.LeftWalk:
+                    _animator.Play("Idle Left");
+                    break;
+                case States.RightWalk:
+                    _animator.Play("Idle Right");
+                    break;
             }
         }
     }
