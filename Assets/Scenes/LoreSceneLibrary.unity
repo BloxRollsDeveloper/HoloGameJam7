@@ -119,6 +119,25 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &26012223 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2555438270453049312, guid: b8600bed4f1cf2d4a852249829037e98, type: 3}
+  m_PrefabInstance: {fileID: 1839304261}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &26012224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26012223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c8064f062e85541eb011ecf474a60d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PersistentGameState
+  playerHP: 2
+  levels: 000000
 --- !u!1 &139177953
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,7 +440,7 @@ SpriteRenderer:
   m_Size: {x: 17.6875, y: 39.9375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!61 &366896754
 BoxCollider2D:
@@ -481,7 +500,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d143007aa0734ab4f821c554ec436528, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  BookLevelName: 3GuraWorld
 --- !u!114 &366896756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1018,8 +1036,8 @@ Transform:
   m_GameObject: {fileID: 816940174}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.6, y: -2.54, z: 0}
-  m_LocalScale: {x: 0.938602, y: 1.0072701, z: 1}
+  m_LocalPosition: {x: -13.64, y: 3.85, z: 0}
+  m_LocalScale: {x: 0.07005632, y: 0.124415986, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1089490173684566069}
@@ -1073,12 +1091,12 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 3
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: e9c17bb4d5dd39546bfc52fc2991e974, type: 3}
+  m_Sprite: {fileID: -2772355030273995783, guid: 264a7be194856f5b0b642a31c7ffbb74, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 17.6875, y: 39.9375}
+  m_Size: {x: 120, y: 67.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1117,17 +1135,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -4, y: 0}
+  m_Offset: {x: -0.22335815, y: -46.03991}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 17.6875, y: 39.9375}
-    newSize: {x: 17.6875, y: 39.9375}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 120, y: 67.5}
+    newSize: {x: 120, y: 67.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 9, y: 40}
+  m_Size: {x: 118.494064, y: 132.07977}
   m_EdgeRadius: 0
 --- !u!114 &816940178
 MonoBehaviour:
@@ -1138,7 +1156,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 816940174}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d143007aa0734ab4f821c554ec436528, type: 3}
+  m_Script: {fileID: 11500000, guid: e624f79c522b20731bcda842de1114b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
   BookLevelName: 5FaunaWorld
@@ -1153,6 +1171,7 @@ GameObject:
   - component: {fileID: 827046050}
   - component: {fileID: 827046049}
   - component: {fileID: 827046051}
+  - component: {fileID: 827046052}
   m_Layer: 0
   m_Name: BGShelf_Small
   m_TagString: Untagged
@@ -1280,6 +1299,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 300, y: 135}
   m_EdgeRadius: 0
+--- !u!114 &827046052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827046048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e624f79c522b20731bcda842de1114b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LoreBookSlide
+  BookLevelName: 3GuraWorld
 --- !u!1 &904001813
 GameObject:
   m_ObjectHideFlags: 0
@@ -1308,8 +1340,8 @@ Transform:
   m_GameObject: {fileID: 904001813}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20.9, y: -2.54, z: 0}
-  m_LocalScale: {x: 0.938602, y: 1.0072701, z: 1}
+  m_LocalPosition: {x: -22.62, y: 3.72, z: 0}
+  m_LocalScale: {x: 0.07926494, y: 0.12812476, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1089490173684566069}
@@ -1363,12 +1395,12 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: d25e84c4ec7af5b4a960d2b6ce6335c0, type: 3}
+  m_Sprite: {fileID: -2772355030273995783, guid: 264a7be194856f5b0b642a31c7ffbb74, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 17.6875, y: 39.9375}
+  m_Size: {x: 120, y: 67.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1407,17 +1439,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -4, y: 0}
+  m_Offset: {x: -1.2127609, y: -43.57002}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 17.6875, y: 39.9375}
-    newSize: {x: 17.6875, y: 39.9375}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 120, y: 67.5}
+    newSize: {x: 120, y: 67.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 9, y: 40}
+  m_Size: {x: 119.67955, y: 127.13999}
   m_EdgeRadius: 0
 --- !u!114 &904001817
 MonoBehaviour:
@@ -1428,7 +1460,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 904001813}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d143007aa0734ab4f821c554ec436528, type: 3}
+  m_Script: {fileID: 11500000, guid: e624f79c522b20731bcda842de1114b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
   BookLevelName: 4MumeiWorld
@@ -1444,7 +1476,7 @@ GameObject:
   - component: {fileID: 1155835988}
   - component: {fileID: 1155835987}
   - component: {fileID: 1155835986}
-  - component: {fileID: 1155835989}
+  - component: {fileID: 1155835990}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -1469,7 +1501,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 380, y: 240}
+  m_AnchoredPosition: {x: 320, y: 210.03}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1155835986
@@ -1516,7 +1548,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1155835990}
         m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -1566,7 +1598,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1155835984}
   m_CullTransparentMesh: 1
---- !u!114 &1155835989
+--- !u!114 &1155835990
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1575,10 +1607,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1155835984}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d143007aa0734ab4f821c554ec436528, type: 3}
+  m_Script: {fileID: 11500000, guid: 0f7c3aff2dc2cbd438b036d09587b3ec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
-  BookLevelName: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneManagement
 --- !u!1 &1396708162
 GameObject:
   m_ObjectHideFlags: 0
@@ -2098,6 +2129,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1778513116}
   m_CullTransparentMesh: 1
+--- !u!1001 &1839304261
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2555438270453049312, guid: b8600bed4f1cf2d4a852249829037e98, type: 3}
+      propertyPath: m_Name
+      value: GlobalGameState
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048840024813014305, guid: b8600bed4f1cf2d4a852249829037e98, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 116.88311
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048840024813014305, guid: b8600bed4f1cf2d4a852249829037e98, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 53.82938
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048840024813014305, guid: b8600bed4f1cf2d4a852249829037e98, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048840024813014305, guid: b8600bed4f1cf2d4a852249829037e98, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048840024813014305, guid: b8600bed4f1cf2d4a852249829037e98, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048840024813014305, guid: b8600bed4f1cf2d4a852249829037e98, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048840024813014305, guid: b8600bed4f1cf2d4a852249829037e98, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048840024813014305, guid: b8600bed4f1cf2d4a852249829037e98, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048840024813014305, guid: b8600bed4f1cf2d4a852249829037e98, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048840024813014305, guid: b8600bed4f1cf2d4a852249829037e98, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1283985962461868627, guid: b8600bed4f1cf2d4a852249829037e98, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2555438270453049312, guid: b8600bed4f1cf2d4a852249829037e98, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 26012224}
+  m_SourcePrefab: {fileID: 100100000, guid: b8600bed4f1cf2d4a852249829037e98, type: 3}
 --- !u!1 &1863567788
 GameObject:
   m_ObjectHideFlags: 0
@@ -2116,7 +2208,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1863567789
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2134,7 +2226,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 380, y: -240}
+  m_AnchoredPosition: {x: 320, y: -210.03}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1863567790
@@ -2379,10 +2471,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3357410498033509421}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d143007aa0734ab4f821c554ec436528, type: 3}
+  m_Script: {fileID: 11500000, guid: e624f79c522b20731bcda842de1114b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LoreBookSlide
-  BookLevelName: LoreVN
+  BookLevelName: GuraWorld
 --- !u!1 &212618086572417104
 GameObject:
   m_ObjectHideFlags: 0
@@ -2592,7 +2684,7 @@ MonoBehaviour:
         - m_Target: {fileID: 2234368539983169247}
           m_TargetAssemblyTypeName: LoreBookSlide, Assembly-CSharp
           m_MethodName: GoToBookLevel
-          m_Mode: 5
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2675,10 +2767,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 682136751743981968}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d143007aa0734ab4f821c554ec436528, type: 3}
+  m_Script: {fileID: 11500000, guid: e624f79c522b20731bcda842de1114b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LoreBookSlide
-  BookLevelName: 
+  BookLevelName: MumeiWorld
 --- !u!114 &2247669917577631810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2723,10 +2815,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
-        m_MethodName: ChangeScene
-        m_Mode: 5
+      - m_Target: {fileID: 2234368539983169247}
+        m_TargetAssemblyTypeName: LoreBookSlide, Assembly-CSharp
+        m_MethodName: GoToBookLevel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3214,6 +3306,18 @@ MonoBehaviour:
           m_StringArgument: LoreVN
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 3357410498033509421}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SendMessage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 'press '
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!224 &4826379469676572733
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3406,10 +3510,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
-        m_MethodName: ChangeScene
-        m_Mode: 5
+      - m_Target: {fileID: 8101083277165810713}
+        m_TargetAssemblyTypeName: LoreBookSlide, Assembly-CSharp
+        m_MethodName: GoToBookLevel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3475,7 +3579,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!4 &6165153073044850982
 Transform:
@@ -3749,10 +3853,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8744261379363264481}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d143007aa0734ab4f821c554ec436528, type: 3}
+  m_Script: {fileID: 11500000, guid: e624f79c522b20731bcda842de1114b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LoreBookSlide
-  BookLevelName: 
+  BookLevelName: FaunaWorld
 --- !u!4 &8114436930267779099
 Transform:
   m_ObjectHideFlags: 0
@@ -3990,3 +4094,4 @@ SceneRoots:
   - {fileID: 1089490173684566069}
   - {fileID: 827046050}
   - {fileID: 745614019}
+  - {fileID: 1839304261}

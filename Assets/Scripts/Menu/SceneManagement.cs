@@ -5,12 +5,13 @@ public class SceneManagement : MonoBehaviour
     
   public void StartGame()
     {
-        SceneManager.LoadScene("BootlegArchiveRoom");
+        SceneManager.LoadScene("LoreSceneLibrary");
     }
 
   
    public void QuitGame()
     {
         Application.Quit();
+        Debug.Log("Quitting");
     }
 }

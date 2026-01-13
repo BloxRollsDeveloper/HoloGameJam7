@@ -8,12 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/1MainMenu.unity
     guid: 99e002491276c8841970b8febabca243
-  - enabled: 0
-    path: Assets/Scenes/2ArchiveRoom.unity
-    guid: f28a70db08587a941b24a14ca07dc64e
   - enabled: 1
     path: Assets/Scenes/1MainMenu 1.unity
     guid: dd30cdebda7942b1188f1dd772239f5e
+  - enabled: 0
+    path: Assets/Scenes/2ArchiveRoom.unity
+    guid: f28a70db08587a941b24a14ca07dc64e
   - enabled: 1
     path: Assets/Scenes/LoreSceneLibrary.unity
     guid: ea7056bb09673c489b78026701be46a5
@@ -32,6 +32,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: a8ba039f6376db300b1347f23c0b5afe
+  - enabled: 1
+    path: Assets/Scenes/MumeiWorld.unity
+    guid: acae07e9a728aabb9bcce8ed6a21d589
+  - enabled: 1
+    path: Assets/Scenes/GuraWorld.unity
+    guid: a5ad828c35c00dfe98f042496035eb2f
+  - enabled: 1
+    path: Assets/Scenes/FaunaWorld.unity
+    guid: 6fac289b261a58b5888a8849f2d0d982
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: a47fe4de5e69f024c8d2419bf472dd69, type: 3}
   m_UseUCBPForAssetBundles: 0

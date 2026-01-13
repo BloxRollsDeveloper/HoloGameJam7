@@ -327,7 +327,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -5764376462733620197, guid: 373d325ad96ba8088b366a262b2d221e, type: 3}
+  m_Sprite: {fileID: -5935510106402788349, guid: 8ea7e334235f0d41aa20e192dbc662e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -393,11 +393,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 219884873}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a3d4313858bd644c80a6881f54e2f2f, type: 3}
+  m_Script: {fileID: 11500000, guid: 0f7c3aff2dc2cbd438b036d09587b3ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PersistentGameState
-  playerHP: 2
-  levels: 000000
 --- !u!1 &261452413
 GameObject:
   m_ObjectHideFlags: 0
@@ -6255,9 +6253,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 219884876}
-        m_TargetAssemblyTypeName: PersistentGameState, Assembly-CSharp
-        m_MethodName: ChangeScene
-        m_Mode: 5
+        m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

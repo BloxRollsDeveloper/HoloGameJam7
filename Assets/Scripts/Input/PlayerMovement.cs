@@ -10,28 +10,17 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public float moveSpeed = 5f;
 
-    float horizontalMovement;
+   public float horizontalMovement;
 
     private void Start()
     {
-        
+        _animator = GetComponent<Animator>();
     }
 private void UpdateAnimation()
     {
-        _animator = GetComponent<Animator>();
         if (horizontalMovement > 0f)
         {
-            _animator.SetBool("IsWalking", true);
-            transform.localScale = new Vector3(-1f, 1f, 1f);
-        }
-        else if (horizontalMovement < 0f)
-        {
-            _animator.SetBool("IsWalking", true);
-            transform.localScale = new Vector3(1f, 1f, 1f);
-        }
-        else
-        {
-            _animator.SetBool("IsWalking", false);
+            _animator.SetBool("isWalking", true);
         }
     }
     private void Update()
