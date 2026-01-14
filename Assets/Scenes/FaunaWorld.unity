@@ -187,7 +187,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_Sprite: {fileID: 3954719094551815311, guid: d6c7f8bd4455af85491fa5713970d625, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 7.41, y: 10.2}
@@ -1327,20 +1327,36 @@ MonoBehaviour:
   currentText: {fileID: 1629024123}
   nextTriviaSceneName: 5FaunaWorld
   eventsForThisLevel:
-  - currentLeftSprite: {fileID: 8782918817089731711, guid: 489046f93862d8e348623c420d469acf, type: 3}
+  - currentLeftSprite: {fileID: -5935510106402788349, guid: 8ea7e334235f0d41aa20e192dbc662e9, type: 3}
     currentRightSprite: {fileID: 3954719094551815311, guid: d6c7f8bd4455af85491fa5713970d625, type: 3}
     currentSpeakerName: Shiori
     currentText: Fauna? You're here?!
-    currentVAClip: {fileID: 0}
+    currentVAClip: {fileID: 8300000, guid: 5b753fc9fad38ae1c92ed0c83c6dc57a, type: 3}
   - currentLeftSprite: {fileID: -5935510106402788349, guid: 8ea7e334235f0d41aa20e192dbc662e9, type: 3}
     currentRightSprite: {fileID: 3954719094551815311, guid: d6c7f8bd4455af85491fa5713970d625, type: 3}
     currentSpeakerName: Fauna
-    currentText: Konfauna!
-    currentVAClip: {fileID: 0}
-  - currentLeftSprite: {fileID: -6731276745139234834, guid: bacaf7e2335b59db9bbf74468c039a9c, type: 3}
+    currentText: Konfauna! Would you like some tea?
+    currentVAClip: {fileID: 8300000, guid: 8f4a55da9beacd460a22e045f40be678, type: 3}
+  - currentLeftSprite: {fileID: 8782918817089731711, guid: 489046f93862d8e348623c420d469acf, type: 3}
+    currentRightSprite: {fileID: 3954719094551815311, guid: d6c7f8bd4455af85491fa5713970d625, type: 3}
+    currentSpeakerName: Fauna
+    currentText: Oh my, something must have happened.
+    currentVAClip: {fileID: 8300000, guid: 64e7e0574bffdb620a263fba5830faba, type: 3}
+  - currentLeftSprite: {fileID: 8782918817089731711, guid: 489046f93862d8e348623c420d469acf, type: 3}
     currentRightSprite: {fileID: 3954719094551815311, guid: d6c7f8bd4455af85491fa5713970d625, type: 3}
     currentSpeakerName: Shiori
-    currentText: Da fuck?
+    currentText: Yes... unfortunately.
+    currentVAClip: {fileID: 8300000, guid: 5b753fc9fad38ae1c92ed0c83c6dc57a, type: 3}
+  - currentLeftSprite: {fileID: 8782918817089731711, guid: 489046f93862d8e348623c420d469acf, type: 3}
+    currentRightSprite: {fileID: 3954719094551815311, guid: d6c7f8bd4455af85491fa5713970d625, type: 3}
+    currentSpeakerName: Fauna
+    currentText: You seem like you have things to do- perhaps we should speak more
+      later?
+    currentVAClip: {fileID: 8300000, guid: 8f4a55da9beacd460a22e045f40be678, type: 3}
+  - currentLeftSprite: {fileID: 8782918817089731711, guid: 489046f93862d8e348623c420d469acf, type: 3}
+    currentRightSprite: {fileID: 3954719094551815311, guid: d6c7f8bd4455af85491fa5713970d625, type: 3}
+    currentSpeakerName: Shiori
+    currentText: ...
     currentVAClip: {fileID: 0}
 --- !u!1 &6969460406765656152
 GameObject:
