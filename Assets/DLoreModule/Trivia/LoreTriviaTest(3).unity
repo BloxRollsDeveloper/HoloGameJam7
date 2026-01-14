@@ -145,6 +145,7 @@ MonoBehaviour:
   buzzBad: {fileID: 0}
   vfxleGood: {fileID: 0}
   vfxBad: {fileID: 0}
+  playerHP: 0
   triviaRounds:
   - questionText: Are you ready?
     victoryText: 'Hey, at least you''re honest. '
