@@ -1,6 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class VNHandler : MonoBehaviour
 {
@@ -42,23 +43,15 @@ public class VNHandler : MonoBehaviour
         public string currentSpeakerName; //can be blank
         //the words 
         public string currentText;
-
-
-
-
-
+        
         //the voice clip . It plays once
         //I won't do auto yet, requires timing with voice clips and just nope 
-
         public AudioClip currentVAClip; //can be blank 
-
-
     }
 
     //where you fill it all in
     public VNEvent[] eventsForThisLevel;
-
-
+    
     void Start()
     {
         //Audio init
@@ -66,9 +59,6 @@ public class VNHandler : MonoBehaviour
 
         //immediately go to scene 0 in array
         NextVNScene();
-
-
-
     }
 
 
@@ -86,10 +76,10 @@ public class VNHandler : MonoBehaviour
         }
         else
         {
-            //go to trivia  when VN is over
-            PersistentGameState gameState = FindAnyObjectByType<PersistentGameState>();
-            gameState.ChangeScene(nextTriviaSceneName);
-
+            // go to trivia  when VN is over
+            // PersistentGameState gameState = FindAnyObjectByType<PersistentGameState>();
+            // gameState.ChangeScene(nextTriviaSceneName);
+            SceneManager.LoadScene(nextTriviaSceneName);
         }
 
 
