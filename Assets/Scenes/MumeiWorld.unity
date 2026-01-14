@@ -558,7 +558,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 7697941463023800519}
         m_TargetAssemblyTypeName: VNHandler, Assembly-CSharp
         m_MethodName: NextVNScene
         m_Mode: 1
@@ -1302,7 +1302,81 @@ MonoBehaviour:
   currentSpeakerName: {fileID: 2094403065}
   currentText: {fileID: 1629024123}
   nextTriviaSceneName: 4MumeiWorld
-  eventsForThisLevel: []
+  eventsForThisLevel:
+  - currentLeftSprite: {fileID: 8782918817089731711, guid: 489046f93862d8e348623c420d469acf, type: 3}
+    currentRightSprite: {fileID: 5936063223400923163, guid: cbfd0e42458cd1d4fbd393350711af13, type: 3}
+    currentSpeakerName: Mumei
+    currentText: Oh, hi!
+    currentVAClip: {fileID: 8300000, guid: d3425aa471cc2387396e235cbc242642, type: 3}
+  - currentLeftSprite: {fileID: 8782918817089731711, guid: 489046f93862d8e348623c420d469acf, type: 3}
+    currentRightSprite: {fileID: 5936063223400923163, guid: cbfd0e42458cd1d4fbd393350711af13, type: 3}
+    currentSpeakerName: Shiori
+    currentText: 'Hi, Mooms. Whatcha reading? '
+    currentVAClip: {fileID: 8300000, guid: 5b753fc9fad38ae1c92ed0c83c6dc57a, type: 3}
+  - currentLeftSprite: {fileID: 8782918817089731711, guid: 489046f93862d8e348623c420d469acf, type: 3}
+    currentRightSprite: {fileID: 5936063223400923163, guid: cbfd0e42458cd1d4fbd393350711af13, type: 3}
+    currentSpeakerName: Mumei
+    currentText: 'I''m reading through all the things my fans have been up to. Did
+      you know that there''s this thing going on where they''re making games? They
+      make games about us! '
+    currentVAClip: {fileID: 8300000, guid: 6be058745202939afad4d6bf35c3f2dc, type: 3}
+  - currentLeftSprite: {fileID: 8782918817089731711, guid: 489046f93862d8e348623c420d469acf, type: 3}
+    currentRightSprite: {fileID: 5936063223400923163, guid: cbfd0e42458cd1d4fbd393350711af13, type: 3}
+    currentSpeakerName: Shiori
+    currentText: Oh yeah, I mentioned it once.
+    currentVAClip: {fileID: 8300000, guid: 5b753fc9fad38ae1c92ed0c83c6dc57a, type: 3}
+  - currentLeftSprite: {fileID: -6731276745139234834, guid: bacaf7e2335b59db9bbf74468c039a9c, type: 3}
+    currentRightSprite: {fileID: 5936063223400923163, guid: cbfd0e42458cd1d4fbd393350711af13, type: 3}
+    currentSpeakerName: Mumei
+    currentText: "This slime-looking one is funny. I don't understand the one with
+      the Takodachi, though. This one with Gigi\u2019s pretty funny. Oh! There's
+      me! That's me with the gun!"
+    currentVAClip: {fileID: 8300000, guid: 6be058745202939afad4d6bf35c3f2dc, type: 3}
+  - currentLeftSprite: {fileID: -7196147299465053122, guid: 2aca8ebbf9c8c25c58b7c8978b437116, type: 3}
+    currentRightSprite: {fileID: 5936063223400923163, guid: cbfd0e42458cd1d4fbd393350711af13, type: 3}
+    currentSpeakerName: Mumei
+    currentText: ...
+    currentVAClip: {fileID: 8300000, guid: d3425aa471cc2387396e235cbc242642, type: 3}
+  - currentLeftSprite: {fileID: -7196147299465053122, guid: 2aca8ebbf9c8c25c58b7c8978b437116, type: 3}
+    currentRightSprite: {fileID: 5936063223400923163, guid: cbfd0e42458cd1d4fbd393350711af13, type: 3}
+    currentSpeakerName: Mumei
+    currentText: "Something\u2019s about to happen here, is it?"
+    currentVAClip: {fileID: 8300000, guid: 6be058745202939afad4d6bf35c3f2dc, type: 3}
+  - currentLeftSprite: {fileID: 8782918817089731711, guid: 489046f93862d8e348623c420d469acf, type: 3}
+    currentRightSprite: {fileID: 5936063223400923163, guid: cbfd0e42458cd1d4fbd393350711af13, type: 3}
+    currentSpeakerName: Shiori
+    currentText: 'Oh? How did you know? '
+    currentVAClip: {fileID: 8300000, guid: 5b753fc9fad38ae1c92ed0c83c6dc57a, type: 3}
+  - currentLeftSprite: {fileID: 8782918817089731711, guid: 489046f93862d8e348623c420d469acf, type: 3}
+    currentRightSprite: {fileID: 5936063223400923163, guid: cbfd0e42458cd1d4fbd393350711af13, type: 3}
+    currentSpeakerName: Mumei
+    currentText: "Oh\u2026call it an owl\u2019s intuition\u2026"
+    currentVAClip: {fileID: 8300000, guid: d3425aa471cc2387396e235cbc242642, type: 3}
+  - currentLeftSprite: {fileID: 8782918817089731711, guid: 489046f93862d8e348623c420d469acf, type: 3}
+    currentRightSprite: {fileID: 5936063223400923163, guid: cbfd0e42458cd1d4fbd393350711af13, type: 3}
+    currentSpeakerName: Shiori
+    currentText: '*giggle giggle*'
+    currentVAClip: {fileID: 8300000, guid: f1b6cc6c42088d64d838b2ec10752c93, type: 3}
+  - currentLeftSprite: {fileID: -7196147299465053122, guid: 2aca8ebbf9c8c25c58b7c8978b437116, type: 3}
+    currentRightSprite: {fileID: 5936063223400923163, guid: cbfd0e42458cd1d4fbd393350711af13, type: 3}
+    currentSpeakerName: Mumei
+    currentText: Shiori?
+    currentVAClip: {fileID: 8300000, guid: d3425aa471cc2387396e235cbc242642, type: 3}
+  - currentLeftSprite: {fileID: 8782918817089731711, guid: 489046f93862d8e348623c420d469acf, type: 3}
+    currentRightSprite: {fileID: 5936063223400923163, guid: cbfd0e42458cd1d4fbd393350711af13, type: 3}
+    currentSpeakerName: Shiori
+    currentText: Yeah? What's up Moomers?
+    currentVAClip: {fileID: 8300000, guid: d3425aa471cc2387396e235cbc242642, type: 3}
+  - currentLeftSprite: {fileID: -6731276745139234834, guid: bacaf7e2335b59db9bbf74468c039a9c, type: 3}
+    currentRightSprite: {fileID: 5936063223400923163, guid: cbfd0e42458cd1d4fbd393350711af13, type: 3}
+    currentSpeakerName: Mumei
+    currentText: "I\u2026I wanna play one more game\u2026just one more."
+    currentVAClip: {fileID: 8300000, guid: d3425aa471cc2387396e235cbc242642, type: 3}
+  - currentLeftSprite: {fileID: -7196147299465053122, guid: 2aca8ebbf9c8c25c58b7c8978b437116, type: 3}
+    currentRightSprite: {fileID: 5936063223400923163, guid: cbfd0e42458cd1d4fbd393350711af13, type: 3}
+    currentSpeakerName: Shiori
+    currentText: Sure... Let me clean up first.
+    currentVAClip: {fileID: 8300000, guid: 5b753fc9fad38ae1c92ed0c83c6dc57a, type: 3}
 --- !u!4 &7878350320192794685
 Transform:
   m_ObjectHideFlags: 0
