@@ -1409,9 +1409,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 7697941463023800518}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ec7910f27f936d4c99aa0248adc4bd6, type: 3}
+  m_Script: {fileID: 11500000, guid: 515a9323ac935aa808ea73e76308a264, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VNHandler
+  leftSceneCharacter: {fileID: 0}
+  rightSceneCharacter: {fileID: 0}
+  currentSpeakerName: {fileID: 0}
+  currentText: {fileID: 0}
+  nextTriviaSceneName: 
+  eventsForThisLevel:
+  - currentLeftSprite: {fileID: 0}
+    currentRightSprite: {fileID: 0}
+    currentSpeakerName: 
+    currentText: 
+    currentVAClip: {fileID: 0}
 --- !u!1 &6969460406765656152
 GameObject:
   m_ObjectHideFlags: 0
