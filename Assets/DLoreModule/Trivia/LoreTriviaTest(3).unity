@@ -128,41 +128,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 5804972111035040387}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aca41f458cfd8bbe595f62775ccc651b, type: 3}
+  m_Script: {fileID: 11500000, guid: 773e0c97283e40bdd91e1f71e309bbd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriviaSystem
   currentRound: -1
-  playerScore: 3
+  playerScore: 0
   scoreToWinLevel: 0
   lastPlayerAnswer: 
-  uiMainText: {fileID: 7036251935719935705}
-  uiAnswerA: {fileID: 3680362236596503480}
-  uiAnswerB: {fileID: 2803939990843743324}
-  uiAnswerC: {fileID: 7005983631359789211}
-  uiAnswerD: {fileID: 1495347741605267054}
-  nextRoundButton: {fileID: 2870762745687307606}
+  uiMainText: {fileID: 0}
+  uiAnswerA: {fileID: 0}
+  uiAnswerB: {fileID: 0}
+  uiAnswerC: {fileID: 0}
+  uiAnswerD: {fileID: 0}
+  nextRoundButton: {fileID: 0}
   buzzGood: {fileID: 0}
   buzzBad: {fileID: 0}
   vfxleGood: {fileID: 0}
   vfxBad: {fileID: 0}
   playerHP: 0
-  triviaRounds:
-  - questionText: Are you ready?
-    victoryText: 'Hey, at least you''re honest. '
-    textA: ermmm
-    textB: uhhhh
-    textC: eeep
-    textD: 'Definitely 100% Not Ready '
-    correctAnswer: D
-    questionVAudio: {fileID: 0}
-  - questionText: 'Are you ready for this to be over? '
-    victoryText: 'ayyyy lmao me too, chill  '
-    textA: please
-    textB: yes
-    textC: (cry)
-    textD: A,B, and C
-    correctAnswer: D
-    questionVAudio: {fileID: 0}
+  triviaRounds: []
 --- !u!1 &979678274
 GameObject:
   m_ObjectHideFlags: 0
