@@ -305,6 +305,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &286095098 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 619540850803440707, guid: 51a2c3415e6b56e4ca6752a9dcda79f3, type: 3}
+  m_PrefabInstance: {fileID: 1271087448}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &310614536
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,9 +512,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2604558299854850936, guid: b49ada1e02812c241a52b5a8b9295295, type: 3}
+      propertyPath: talentTrivia
+      value: 
+      objectReference: {fileID: 286095098}
     - target: {fileID: 6206207075281047734, guid: b49ada1e02812c241a52b5a8b9295295, type: 3}
       propertyPath: m_Name
       value: MarmineVerShoriPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057202752684173727, guid: b49ada1e02812c241a52b5a8b9295295, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -571,34 +584,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1283985962461868627, guid: b8600bed4f1cf2d4a852249829037e98, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2555438270453049312, guid: b8600bed4f1cf2d4a852249829037e98, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 952549113}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8600bed4f1cf2d4a852249829037e98, type: 3}
---- !u!1 &952549112 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2555438270453049312, guid: b8600bed4f1cf2d4a852249829037e98, type: 3}
-  m_PrefabInstance: {fileID: 952549111}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &952549113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 952549112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8064f062e85541eb011ecf474a60d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PersistentGameState
-  playerHP: 2
-  levels: 000000
 --- !u!1001 &961387834
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -899,7 +889,7 @@ GameObject:
   - component: {fileID: 1253300009}
   m_Layer: 0
   m_Name: GuraNPC
-  m_TagString: Untagged
+  m_TagString: Trivia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -999,6 +989,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1304219030}
+  - {fileID: 2084916122}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1253300008
@@ -1375,6 +1366,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2084916121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2084916122}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2084916122
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084916121}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1253300007}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2121192555
 GameObject:
