@@ -727,17 +727,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1209793041 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4068873757065811518, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
-  m_PrefabInstance: {fileID: 2138992562}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!1001 &1469951219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -930,7 +919,7 @@ PrefabInstance:
     - target: {fileID: 3664623380612491433, guid: ab5f7b05fc3d8bdc7a351a0b02fb5dbd, type: 3}
       propertyPath: nextRoundButton
       value: 
-      objectReference: {fileID: 1209793041}
+      objectReference: {fileID: 0}
     - target: {fileID: 3664623380612491433, guid: ab5f7b05fc3d8bdc7a351a0b02fb5dbd, type: 3}
       propertyPath: scoreToWinLevel
       value: 2
@@ -1369,6 +1358,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: AnswerTextB
       objectReference: {fileID: 0}
+    - target: {fileID: 8892556353049197869, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_Text
+      value: 'x=12
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 8942326339196396143, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
       propertyPath: m_Text
       value: 'Solve these 3 math questions to advance.
@@ -1376,7 +1371,8 @@ PrefabInstance:
         (Good luck, seriously)'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4868454516467009834, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
