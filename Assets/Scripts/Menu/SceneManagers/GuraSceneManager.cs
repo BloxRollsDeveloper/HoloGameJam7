@@ -11,6 +11,6 @@ public class GuraSceneManager : MonoBehaviour
   
    public void WrongAnswer()
     {
-       GuraSceneManager.LoadScene("GameOver");
+       SceneManager.LoadScene("GameOver");
     }
 }

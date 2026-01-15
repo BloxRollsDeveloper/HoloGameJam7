@@ -12,6 +12,5 @@ public class EndManager : MonoBehaviour
    public void QuitGame()
     {
         Application.Quit();
-        Debug.Log("Quitting");
     }
 }

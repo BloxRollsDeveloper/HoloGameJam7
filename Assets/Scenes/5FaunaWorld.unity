@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 29371029}
   - component: {fileID: 29371030}
+  - component: {fileID: 29371031}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -248,6 +249,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &29371031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29371028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef48fef3e0bde6a5584433707740e67a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FaunaSceneManager
 --- !u!4 &109410317 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6165153072651729675, guid: fab7a0dcd40bc1a9a9b3529598ca49be, type: 3}
@@ -962,6 +975,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 484286077217813705, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 484286077217813705, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 29371031}
+    - target: {fileID: 484286077217813705, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CorrectAnswer
+      objectReference: {fileID: 0}
+    - target: {fileID: 484286077217813705, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FaunaSceneManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190055597663787334, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190055597663787334, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 29371031}
+    - target: {fileID: 1190055597663787334, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: WrongAnswer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190055597663787334, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FaunaSceneManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1237293543824071941, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_Text
+      value: Jeremy Clarkson
+      objectReference: {fileID: 0}
     - target: {fileID: 3826940494580822876, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
       propertyPath: m_Name
       value: TriviaCanvas
@@ -969,6 +1018,34 @@ PrefabInstance:
     - target: {fileID: 3826940494580822876, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4046632165085397605, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_Text
+      value: 'Mozart
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553154639643630988, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553154639643630988, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 29371031}
+    - target: {fileID: 4553154639643630988, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: WrongAnswer
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553154639643630988, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FaunaSceneManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5989837793182440849, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_Text
+      value: 'Claude Debussy
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 6628977994394236557, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
       propertyPath: m_Pivot.x
@@ -1049,6 +1126,30 @@ PrefabInstance:
     - target: {fileID: 6628977994394236557, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057675122516644095, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057675122516644095, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 29371031}
+    - target: {fileID: 8057675122516644095, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: WrongAnswer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057675122516644095, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FaunaSceneManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892556353049197869, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_Text
+      value: Beethoven
+      objectReference: {fileID: 0}
+    - target: {fileID: 8942326339196396143, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_Text
+      value: Who wrote the song that made Bethany's crash comedic?
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

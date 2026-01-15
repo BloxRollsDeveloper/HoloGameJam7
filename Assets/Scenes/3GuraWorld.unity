@@ -1427,12 +1427,64 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 484286077217813705, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 484286077217813705, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 484286077217813705, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 484286077217813705, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 963931676}
+    - target: {fileID: 484286077217813705, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 963931675}
     - target: {fileID: 484286077217813705, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 484286077217813705, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: WrongAnswer
+      objectReference: {fileID: 0}
+    - target: {fileID: 484286077217813705, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GuraSceneManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 484286077217813705, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: TriviaSystem, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 484286077217813705, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 484286077217813705, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190055597663787334, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190055597663787334, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 963931676}
+    - target: {fileID: 1190055597663787334, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: WrongAnswer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190055597663787334, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GuraSceneManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1237293543824071941, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
       propertyPath: m_Text
@@ -1453,6 +1505,22 @@ PrefabInstance:
       value: 'x=9
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553154639643630988, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553154639643630988, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 963931676}
+    - target: {fileID: 4553154639643630988, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: WrongAnswer
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553154639643630988, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GuraSceneManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5989837793182440849, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
       propertyPath: m_Text
@@ -1541,6 +1609,22 @@ PrefabInstance:
     - target: {fileID: 6923141165400047158, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
       propertyPath: m_Name
       value: AnswerTextB
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057675122516644095, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057675122516644095, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 963931676}
+    - target: {fileID: 8057675122516644095, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CorrectAnswer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8057675122516644095, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GuraSceneManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8892556353049197869, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
       propertyPath: m_Text

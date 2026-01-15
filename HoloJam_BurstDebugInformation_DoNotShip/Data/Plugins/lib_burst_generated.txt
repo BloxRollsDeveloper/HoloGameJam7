@@ -10,7 +10,6 @@ Library: /home/emilio/HoloGameJam7/Temp/BurstOutput/Data/Plugins/lib_burst_gener
 --target-framework=NetFramework
 --generate-link-xml=Temp/burst.link.xml
 --temp-folder=/home/emilio/HoloGameJam7/Temp/Burst
---debug=Full
 --enable-frame-info-registration
 --key-folder=/home/emilio/Unity/Hub/Editor/6000.3.2f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport
 --decode-folder=/home/emilio/HoloGameJam7/Library/Burst
@@ -54,7 +53,6 @@ Library: /home/emilio/HoloGameJam7/Temp/BurstOutput/Data/Plugins/lib_burst_gener
 --target-framework=NetFramework
 --generate-link-xml=Temp/burst.link.xml
 --temp-folder=/home/emilio/HoloGameJam7/Temp/Burst
---debug=Full
 --enable-frame-info-registration
 --key-folder=/home/emilio/Unity/Hub/Editor/6000.3.2f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport
 --decode-folder=/home/emilio/HoloGameJam7/Library/Burst
@@ -98,7 +96,6 @@ Library: /home/emilio/HoloGameJam7/Temp/BurstOutput/Data/Plugins/lib_burst_gener
 --target-framework=NetFramework
 --generate-link-xml=Temp/burst.link.xml
 --temp-folder=/home/emilio/HoloGameJam7/Temp/Burst
---debug=Full
 --enable-frame-info-registration
 --key-folder=/home/emilio/Unity/Hub/Editor/6000.3.2f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport
 --decode-folder=/home/emilio/HoloGameJam7/Library/Burst
@@ -216,7 +213,6 @@ Library: /home/emilio/HoloGameJam7/Temp/BurstOutput/Data/Plugins/lib_burst_gener
 --target-framework=NetFramework
 --generate-link-xml=Temp/burst.link.xml
 --temp-folder=/home/emilio/HoloGameJam7/Temp/Burst
---debug=Full
 --enable-frame-info-registration
 --key-folder=/home/emilio/Unity/Hub/Editor/6000.3.2f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport
 --decode-folder=/home/emilio/HoloGameJam7/Library/Burst
@@ -336,7 +332,6 @@ Library: /home/emilio/HoloGameJam7/Temp/BurstOutput/Data/Plugins/lib_burst_gener
 --float-mode=Fast
 --generate-link-xml=Temp/burst.link.xml
 --temp-folder=/home/emilio/HoloGameJam7/Temp/Burst
---debug=Full
 --enable-frame-info-registration
 --key-folder=/home/emilio/Unity/Hub/Editor/6000.3.2f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport
 --decode-folder=/home/emilio/HoloGameJam7/Library/Burst
@@ -358,7 +353,6 @@ Library: /home/emilio/HoloGameJam7/Temp/BurstOutput/Data/Plugins/lib_burst_gener
 --float-mode=Fast
 --generate-link-xml=Temp/burst.link.xml
 --temp-folder=/home/emilio/HoloGameJam7/Temp/Burst
---debug=Full
 --enable-frame-info-registration
 --key-folder=/home/emilio/Unity/Hub/Editor/6000.3.2f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport
 --decode-folder=/home/emilio/HoloGameJam7/Library/Burst
