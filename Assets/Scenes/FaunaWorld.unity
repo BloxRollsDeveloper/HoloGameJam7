@@ -1330,7 +1330,7 @@ MonoBehaviour:
   - currentLeftSprite: {fileID: -5935510106402788349, guid: 8ea7e334235f0d41aa20e192dbc662e9, type: 3}
     currentRightSprite: {fileID: 3954719094551815311, guid: d6c7f8bd4455af85491fa5713970d625, type: 3}
     currentSpeakerName: Shiori
-    currentText: Fauna? You're here?!
+    currentText: Oh... Hi Fauna.
     currentVAClip: {fileID: 8300000, guid: 5b753fc9fad38ae1c92ed0c83c6dc57a, type: 3}
   - currentLeftSprite: {fileID: -5935510106402788349, guid: 8ea7e334235f0d41aa20e192dbc662e9, type: 3}
     currentRightSprite: {fileID: 3954719094551815311, guid: d6c7f8bd4455af85491fa5713970d625, type: 3}

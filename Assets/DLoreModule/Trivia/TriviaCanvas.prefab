@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -377,9 +377,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1276694544413881751, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276694544413881751, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276694544413881751, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4086035360938109687, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4086035360938109687, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4086035360938109687, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5978397166547356383, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5978397166547356383, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5978397166547356383, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8640766525204989770, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
       propertyPath: m_Name
       value: TriviaContainer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844807794910259811, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844807794910259811, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844807794910259811, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
+      propertyPath: m_Color.r
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
