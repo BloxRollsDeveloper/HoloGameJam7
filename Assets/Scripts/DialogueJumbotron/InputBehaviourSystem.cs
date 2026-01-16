@@ -7,6 +7,7 @@ public class InputBehaviourSystem : MonoBehaviour
 
     public float Horizontal;
     public bool Interact;
+    public Vector2 MousePosition;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -19,6 +20,7 @@ public class InputBehaviourSystem : MonoBehaviour
     {
         Horizontal = _inputSystem.Player.Move.ReadValue<Vector2>().x;
         Interact = _inputSystem.Player.Interact.WasPressedThisFrame();
+        MousePosition = _inputSystem.Player.Look.ReadValue<Vector2>();
     }
 
 	private void OnEnable()
