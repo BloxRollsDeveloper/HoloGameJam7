@@ -124,7 +124,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8942326339196396143, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
   m_PrefabInstance: {fileID: 2138992562}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2138992563}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
@@ -1517,6 +1517,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 60794834418692384, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 484286077217813705, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -1734,8 +1738,31 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6628977994394236557, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1697502611}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 60794834418692384, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2138992564}
   m_SourcePrefab: {fileID: 100100000, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+--- !u!1 &2138992563 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 60794834418692384, guid: 90ae5e8564691c549bd494cc9afc8d57, type: 3}
+  m_PrefabInstance: {fileID: 2138992562}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2138992564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138992563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Outline
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 0, y: 3}
+  m_UseGraphicAlpha: 1
 --- !u!1001 &4241056907402200621
 PrefabInstance:
   m_ObjectHideFlags: 0

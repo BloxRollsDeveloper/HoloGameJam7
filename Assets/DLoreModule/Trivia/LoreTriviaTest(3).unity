@@ -693,6 +693,7 @@ GameObject:
   - component: {fileID: 13302056712310511}
   - component: {fileID: 493265569793340326}
   - component: {fileID: 7036251935719935705}
+  - component: {fileID: 7036251935719935706}
   m_Layer: 5
   m_Name: TriviaSceneText
   m_TagString: Untagged
@@ -2298,6 +2299,21 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Are you ready for the next round? '
+--- !u!114 &7036251935719935706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147444586298036382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Outline
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: 5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &7088470703853129612
 GameObject:
   m_ObjectHideFlags: 0

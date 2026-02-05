@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -379,39 +379,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1276694544413881751, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1276694544413881751, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1276694544413881751, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
       propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2705118981565380090, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
+      propertyPath: m_EffectDistance.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2705118981565380090, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
+      propertyPath: m_EffectDistance.y
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4086035360938109687, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4086035360938109687, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4086035360938109687, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
       propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4377582253437166232, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
+      propertyPath: m_UseGraphicAlpha
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4377582253437166232, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
+      propertyPath: m_EffectDistance.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401051488738403053, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
+      propertyPath: m_EffectDistance.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401051488738403053, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
+      propertyPath: m_EffectDistance.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5299835550632479172, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
+      propertyPath: m_Name
+      value: AnswerTextB
       objectReference: {fileID: 0}
     - target: {fileID: 5978397166547356383, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5978397166547356383, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5978397166547356383, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
       propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6211220298675736382, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
+      propertyPath: m_EffectDistance.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6211220298675736382, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
+      propertyPath: m_EffectDistance.y
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8640766525204989770, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
       propertyPath: m_Name
@@ -419,15 +455,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8844807794910259811, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8844807794910259811, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8844807794910259811, guid: eb081bf03225ae6fc8c80f1b8375a598, type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
