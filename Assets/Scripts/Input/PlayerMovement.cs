@@ -94,11 +94,11 @@ public class PlayerMovement : MonoBehaviour
         {
             switch (state)
             {
-                case States.LeftIdle:
-                    _animator.Play("Idle Left");
-                    break;
                 case States.RightIdle:
                     _animator.Play("Idle Right");
+                    break;
+                case States.LeftIdle:
+                    _animator.Play("Idle Left");
                     break;
                 case States.LeftWalk:
                     _animator.Play("Idle Left");
